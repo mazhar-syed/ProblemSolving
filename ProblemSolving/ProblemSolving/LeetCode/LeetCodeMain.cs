@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProblemSolving.LeetCode.Arrays.Easy;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,6 +10,7 @@ namespace ProblemSolving.LeetCode
         public static void Run()
         {
             Console.WriteLine("Running LeetCode problems...");
+            TwoSum1.Execute();
         }
     }
 }

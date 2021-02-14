@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="LeetCode\Arrays\Medium\" />
+    <Folder Include="LeetCode\Arrays\Hard\" />
+  </ItemGroup>
+
 </Project>
