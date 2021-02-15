@@ -10,7 +10,10 @@ namespace ProblemSolving.LeetCode
         public static void Run()
         {
             Console.WriteLine("Running LeetCode problems...");
-            TwoSum1.Execute();
+            //TwoSum1.Execute();
+            //RemoveDuplicatesFromSortedArray.Execute();
+            //RemoveElement.Execute();
+            SearchInsertPosition.Execute();
         }
     }
 }
