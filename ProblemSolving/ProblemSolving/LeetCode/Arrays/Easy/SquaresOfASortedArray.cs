@@ -25,6 +25,38 @@ namespace ProblemSolving.LeetCode.Arrays.Easy
                 else break;
             }
 
+            int pi = pos + 1; int ni = pos;
+            while (true)
+            {
+                if ( (ni < 0 && pi < nums.Length) || (pi < nums.Length && nums[pi] < (-(nums[ni])))  )
+                {
+                    squares.Add(nums[pi] * nums[pi]);
+                    pi++;
+                    continue;
+                }
+                if(ni >= 0)
+                {
+                    squares.Add((nums[ni]) * (nums[ni]));
+                    ni--;
+                }
+
+                if (pi >= nums.Length && ni < 0) break;
+            }
+
+            squares.Sort();
+            return squares.ToArray();
+        }
+
+        public static int[] SortedSquares2(int[] nums)
+        {
+            var squares = new List<int>();
+            var pos = -1;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] < 0) pos++;
+                else break;
+            }
+
             int pi = pos+1; int ni = pos;
             while (pi < nums.Length && ni >= 0)
             {
