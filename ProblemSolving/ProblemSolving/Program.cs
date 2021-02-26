@@ -9,6 +9,8 @@ namespace ProblemSolving
             LeetCode.LeetCodeMain.Run();
             HackerRank.HackerRankMain.Run();
             CodeForces.CodeForcesMain.Run();
+            
+            DP.DPMain.Run();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");
